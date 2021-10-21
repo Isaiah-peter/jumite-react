@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 80vh;
   background-image: url("https://i.ibb.co/jVdbbqv/jumiteapparel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +64,7 @@ const MainScreen = () => {
               <span style={{ background: "white", color: "#8678D7" }}>
                 Jumite's
               </span>{" "}
-              Appeal
+              Apperal
             </Title>
             <Button>Order now</Button>
           </InfoWrapper>

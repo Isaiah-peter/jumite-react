@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "../component/Navbar";
-import MainScreen from "../component/MainScreen";
-import Products from "../component/Products";
 import Footer from "../component/Footer";
+import Navbar from "../component/Navbar";
 
 const Container = styled.div``;
+const Wrapper = styled.div`
+  padding: 20px;
+`;
 
-const Home = () => {
+const Order = () => {
   return (
     <Container>
       <Navbar />
-      <MainScreen />
-      <Products />
+      <Wrapper></Wrapper>
       <Footer />
     </Container>
   );
 };
 
-export default Home;
+export default Order;
