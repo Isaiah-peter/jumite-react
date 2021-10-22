@@ -16,6 +16,7 @@ const Container = styled.div`
   background: #3b464b;
   color: white;
   width: 100%;
+  font-size: 1.4rem;
 `;
 const Left = styled.div`
   flex: 1;
@@ -27,6 +28,7 @@ const Left = styled.div`
 const Logo = styled.h1`
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 2rem;
 `;
 
 const Description = styled.p`
@@ -36,6 +38,7 @@ const Description = styled.p`
 const SocialMediaContainer = styled.div`
   display: flex;
   align-items: center;
+  font-size: 1.6rem !important;
 `;
 const SocialIcon = styled.div`
   width: 40px;

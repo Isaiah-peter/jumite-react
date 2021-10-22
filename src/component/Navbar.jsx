@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 50px;
   width: 100%;
-
+  background: #${(props) => props.scroll === true && "897DE1"};
   position: fixed;
   top: 0;
   left: 0;
+  padding: 10px 0;
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -52,8 +53,14 @@ const Button = styled.button`
 `;
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
   return (
-    <Container>
+    <Container scroll={isScrolled}>
       <Wrapper>
         <Left>
           <Icon src="https://i.ibb.co/dKZLnQ9/Badge-1.png" alt="app icon" />

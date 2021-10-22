@@ -16,6 +16,7 @@ const Title = styled.h1`
   text-transform: uppercase;
   font-weight: 300;
   margin: 20px 0;
+  font-size: 3rem;
 `;
 
 const Products = () => {
