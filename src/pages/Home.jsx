@@ -4,6 +4,7 @@ import Navbar from "../component/Navbar";
 import MainScreen from "../component/MainScreen";
 import Products from "../component/Products";
 import Footer from "../component/Footer";
+import Comment from "../component/Comment";
 
 const Container = styled.div``;
 
@@ -13,6 +14,7 @@ const Home = () => {
       <Navbar />
       <MainScreen />
       <Products />
+      <Comment />
       <Footer />
     </Container>
   );
