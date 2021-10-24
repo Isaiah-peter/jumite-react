@@ -10,6 +10,16 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
+  position: relative;
+`;
+
+const CustomerName = styled.h1`
+  color: #897de1;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: cursive;
+  z-index: 20;
 `;
 
 const Image = styled.img`
@@ -23,6 +33,7 @@ const ProductItem = ({ img }) => {
     <Container>
       <Wrapper>
         <Image src={img.img} alt={img.img} />
+        <CustomerName>Isaiah</CustomerName>
       </Wrapper>
     </Container>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 65%;
+  width: 30%;
   margin: 0 auto;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   background-color: rgba(225, 225, 225, 0.16);
@@ -17,12 +17,6 @@ const Container = styled.div`
 const Story = styled.div`
   transform: skewX(12deg);
 `;
-const Title = styled.h3`
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: uppercase;
-`;
 const Comments = styled.p``;
 const CustomerName = styled.h1`
   text-align: end;
@@ -36,12 +30,7 @@ const CommentStory = () => {
   return (
     <Container>
       <Story>
-        <Title>Nice Work</Title>
-        <Comments>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-          architecto, unde mollitia consectetur, blanditiis assumenda quos ipsum
-          eaque voluptas dolorum iusto.
-        </Comments>
+        <Comments>Lorem ipsum</Comments>
       </Story>
       <CustomerName>Isaiah</CustomerName>
     </Container>

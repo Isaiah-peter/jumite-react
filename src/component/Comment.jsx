@@ -27,6 +27,11 @@ const Input = styled.input`
   height: 2rem;
   padding: 0.5rem;
   font-size: 1.6rem;
+  border: 1px solid #897de1;
+
+  &:focus {
+    outline: 1px solid #897de1;
+  }
 `;
 const Button = styled.button`
   flex: 1;
@@ -34,15 +39,23 @@ const Button = styled.button`
   color: white;
   background-color: #897de1;
   margin-left: 1rem;
+  cursor: pointer;
+`;
+
+const CommentContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const Comment = () => {
   return (
     <Container>
       <Title>Customer Review</Title>
-      <CommentStory />
-      <CommentStory />
-      <CommentStory />
+      <CommentContainer>
+        <CommentStory />
+        <CommentStory />
+        <CommentStory />
+      </CommentContainer>
 
       <InputPage>
         <Input type="text" placeholder="your review is appreciated" />

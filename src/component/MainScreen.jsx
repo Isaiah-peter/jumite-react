@@ -16,6 +16,14 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
+const Text = styled.p`
+  font-size: 1.4rem;
+  color: white;
+  margin: 1rem 0;
+  font-family: cursive;
+  font-weight: 300;
+`;
+
 const Info = styled.div`
   flex: 4;
   width: 100%;
@@ -66,6 +74,7 @@ const MainScreen = () => {
               </span>{" "}
               Apperal
             </Title>
+            <Text>welcome to the home of fashion</Text>
             <Button>Order now</Button>
           </InfoWrapper>
         </Info>

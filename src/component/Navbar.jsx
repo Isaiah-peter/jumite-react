@@ -6,10 +6,12 @@ const Container = styled.div`
   height: 50px;
   width: 100%;
   background: #${(props) => props.scroll === true && "897DE1"};
+  background-color: #${(props) => props.nav === "897DE1" && "897DE1"};
   position: fixed;
   top: 0;
   left: 0;
   padding: 10px 0;
+  z-index: 100;
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -52,7 +54,7 @@ const Button = styled.button`
   padding: ${(props) => props.typed === "filled" && "8px"};
 `;
 
-const Navbar = () => {
+const Navbar = ({ navcolor }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   window.onscroll = () => {
@@ -60,7 +62,7 @@ const Navbar = () => {
     return () => (window.onscroll = null);
   };
   return (
-    <Container scroll={isScrolled}>
+    <Container nav={navcolor} scroll={isScrolled}>
       <Wrapper>
         <Left>
           <Icon src="https://i.ibb.co/dKZLnQ9/Badge-1.png" alt="app icon" />
