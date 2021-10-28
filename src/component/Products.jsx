@@ -22,7 +22,7 @@ const Title = styled.h1`
 const Products = () => {
   return (
     <Container>
-      <Title> Our Product </Title>
+      <Title> Our Work </Title>
       <Wrapper>
         {data.map((d) => {
           return <ProductItem key={d.id} img={d} />;

@@ -5,6 +5,7 @@ import MainScreen from "../component/MainScreen";
 import Products from "../component/Products";
 import Footer from "../component/Footer";
 import Comment from "../component/Comment";
+import OfferPage from "../component/OfferPage";
 
 const Container = styled.div``;
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Navbar />
       <MainScreen />
       <Products />
+      <OfferPage />
       <Comment />
       <Footer />
     </Container>

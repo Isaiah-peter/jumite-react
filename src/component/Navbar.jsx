@@ -69,7 +69,9 @@ const Navbar = ({ navcolor }) => {
           <Name>Jumite</Name>
         </Left>
         <Right>
-          <Button>Orders</Button>
+          <Link className="link" to="/get-order">
+            <Button>Orders</Button>
+          </Link>
           <Link className="link" to="/create-order">
             <Button typed="filled">Create Order</Button>
           </Link>
