@@ -64,10 +64,12 @@ const Navbar = ({ navcolor }) => {
   return (
     <Container nav={navcolor} scroll={isScrolled}>
       <Wrapper>
-        <Left>
-          <Icon src="https://i.ibb.co/dKZLnQ9/Badge-1.png" alt="app icon" />
-          <Name>Jumite</Name>
-        </Left>
+        <Link className="link" to="/">
+          <Left>
+            <Icon src="https://i.ibb.co/dKZLnQ9/Badge-1.png" alt="app icon" />
+            <Name>Jumite</Name>
+          </Left>
+        </Link>
         <Right>
           <Link className="link" to="/get-order">
             <Button>Orders</Button>

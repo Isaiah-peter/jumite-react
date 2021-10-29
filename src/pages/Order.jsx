@@ -37,19 +37,19 @@ const Label = styled.label`
   font-weight: 600;
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
-  color: #897de1;
+  color: gray;
 `;
 
 const Input = styled.input`
   width: 100%;
   height: 2rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
   font-size: 1.6rem;
-  border: ${(props) => props.names && "1px solid #897DE1"};
+  border: none;
+  border-bottom: ${(props) => props.names && "1px solid #897DE1"} !important;
 
   &:focus {
-    outline: 1px solid #897de1;
+    outline: none;
   }
 `;
 
@@ -61,7 +61,7 @@ const Desc = styled.textarea`
   border: 1px solid #897de1;
 
   &:focus {
-    outline: 1px solid #897de1;
+    outline: none;
   }
 `;
 
@@ -122,10 +122,9 @@ const Order = () => {
   const [deleteFile, setDeleteFile] = useState("");
 
   const handleDelete = (image) => {
-    const storage = storage.getStorage();
+    const store = storage.getStorage();
 
-    // Create a reference to the file to delete
-    const desertRef = storage.ref(storage, image);
+    const desertRef = storage.ref(store, image);
 
     storage
       .deleteObject(desertRef)
