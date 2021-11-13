@@ -74,7 +74,7 @@ const MainScreen = () => {
               <span style={{ background: "white", color: "#8678D7" }}>
                 Jumite's
               </span>{" "}
-              Apperal
+              Apparal
             </Title>
             <Text>welcome to the home of fashion</Text>
             <Link className="link" to="/create-order">

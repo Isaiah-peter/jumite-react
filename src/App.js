@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Order from "./pages/Order";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import GetListOfOrder from "./pages/GetListOfOrder";
+import Login from "./pages/login";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="login">
+          <Login />
         </Route>
         <Route path="/create-order">
           <Order />
