@@ -2,12 +2,28 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
-const Wrapper = styled.div``;
-const InputContainer = styled.div``;
-const Input = styled.input``;
-const Label = styled.label``;
+const Wrapper = styled.div`
+  width: 50%;
+  display: block;
+`;
+const InputContainer = styled.div`
+  display: block;
+  margin: 1rem;
+  padding: 0 2rem;
+`;
+const Input = styled.input`
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 16px;
+`;
+const Label = styled.label`
+  font-size: 1px;
+  font-weight: 300;
+`;
 
 const Login = () => {
   return (
