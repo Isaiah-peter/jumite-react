@@ -5,6 +5,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: #8577d6;
 `;
 const Wrapper = styled.div`
   width: 50%;
@@ -21,7 +23,7 @@ const Input = styled.input`
   font-size: 16px;
 `;
 const Label = styled.label`
-  font-size: 1px;
+  font-size: 14px;
   font-weight: 300;
 `;
 

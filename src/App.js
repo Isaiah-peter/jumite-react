@@ -4,6 +4,7 @@ import Order from "./pages/Order";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import GetListOfOrder from "./pages/GetListOfOrder";
 import Login from "./pages/login";
+import Register from "./pages/register";
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="login">
+        <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/register">
+          <Register />
         </Route>
         <Route path="/create-order">
           <Order />

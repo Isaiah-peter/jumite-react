@@ -5,13 +5,14 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: #8577d6;
 `;
 const Wrapper = styled.div`
-  width: 50%;
+  width: 30%;
   display: block;
 `;
 const InputContainer = styled.div`
-  display: block;
   margin: 1rem;
   padding: 0 2rem;
 `;
@@ -21,8 +22,9 @@ const Input = styled.input`
   font-size: 16px;
 `;
 const Label = styled.label`
-  font-size: 1px;
+  font-size: 12px;
   font-weight: 300;
+  margin-bottom: 1rem;
 `;
 
 const Login = () => {
