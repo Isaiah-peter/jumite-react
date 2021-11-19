@@ -6,7 +6,9 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #8577d6;
+  background-image: url("https://i.ibb.co/SXFRsvr/every-angle-c-Vqm-AHQ1xj4-unsplash.jpg");
+  background-repeat: no-repeat;
+  
 `;
 const Wrapper = styled.div`
   width: 30%;
